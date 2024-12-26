@@ -73,7 +73,7 @@ module sub (a,b,bin,diff,bout);
 input a,b,bin;
 output diff,bout;
 assign diff=((a^b)^bin);
-assign bout=(~a & b)|(bin&~(a^b));
+assign bout=((~a & b)|(bin & ~(a^b)));
 endmodule
 
 /* Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber:
